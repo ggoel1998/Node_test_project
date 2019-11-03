@@ -1,0 +1,22 @@
+.flex-centered {
+    align-items: center;
+    height: 100%;
+}
+
+.done {
+    color: #6c757d;
+    text-decoration: line-through;
+}
+
+.ib {
+    width: 10px;
+}
+
+.btt {
+    margin-bottom: 8px;
+}
+
+ul li:hover {
+    background-color: #eee;
+  }
+ 

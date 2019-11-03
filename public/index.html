@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cc97266326.js" crossorigin="anonymous"></script>
+    <!-- My Files -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="frontend.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-4" align="center">Todo List</h1>
+         <!-- Input elements and buttons -->
+        <div class="row">
+            <div class="form-group col-3">
+                <label for="formGroupExampleInput">New Task</label><br>
+                <input type="text" class="form-control" id="input" placeholder="Task title">
+                <small id="newTaskHelp" class="form-text text-muted">Describe Your Task</small>
+            </div>
+            <div class="form-group col-3">
+                <label for="formGroupExampleInput">Due Date</label><br>
+                <input type="date" class="form-control" id="date" >
+                <small id="newTaskHelp" class="form-text text-muted">Choose Due Date</small>
+            </div>
+            <div class="col-6">
+                <div class="row flex-centered">
+                    <button type="button" class="btn btn-primary mx-1 btt" id="add"><i class="fas fa-plus-circle"></i>ADD</button>
+                    <button type="button" class="btn btn-danger mx-1 btt" id="clear"><i class="fas fa-backspace"></i>CLEAR</button>
+                    <button type="button" class="btn btn-outline-success mx-1 btt" id="sort"><i class="fas fa-sort-amount-up-alt"></i>SORT</button>
+                    <button type="button" class="btn btn-outline-success mx-1 btt" id="sort_date"><i class="fas fa-calendar-day"></i>SORT BY DATE</button>
+                    <button type="button" class="btn btn-warning mx-1 btt" id="delall"><i class="fas fa-trash-alt"></i>DELETE</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="list-group" id="list">
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
